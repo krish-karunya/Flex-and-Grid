@@ -1,0 +1,104 @@
+:root {
+  --dark-color: rgb(27, 22, 22);
+  --pink-color: rgb(192, 23, 239);
+  --peacock-color: rgb(95, 29, 211);
+  --green-color: rgb(74, 174, 74);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: var(--dark-color);
+  font-size: 1rem;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+}
+.maincontainer {
+  /* display: flex;
+  flex-wrap: wrap;
+  gap: 20px; */
+  width: 100%;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.item {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+}
+.item1 {
+  background-color: var(--pink-color);
+
+  /* flex: 1; */
+}
+.item2 {
+  background-color: var(--peacock-color);
+  /* flex: 1; */
+}
+.item3 {
+  background-color: var(--green-color);
+  /* flex: 1; */
+}
+p {
+  background-color: wheat;
+  text-shadow: 2px 2px 5px brown;
+}
+
+p::first-letter {
+  text-transform: uppercase;
+}
+li {
+  background-color: wheat;
+}
+
+ol {
+  list-style-type: lower-alpha;
+  list-style-position: inside;
+}
+
+ol li:first-child {
+  color: purple;
+  width: 10ch;
+}
+::marker {
+  color: red;
+}
+
+p {
+  text-align: justify;
+}
+.column {
+  column-count: 4;
+  column-gap: 2rem;
+  text-align: justify;
+  column-rule: 2px solid purple;
+  break-inside: avoid;
+  break-before: column;
+  column-span: all;
+}
+.red {
+  background-color: red;
+}
+button {
+  background-color: blueviolet;
+  color: wheat;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+button {
+  background: rgb(33, 37, 40);
+}
+
+button:hover {
+  letter-spacing: 0.5em;
+  transition: 1s;
+  border: purple;
+  box-shadow: 0 0 20px blueviolet;
+}
